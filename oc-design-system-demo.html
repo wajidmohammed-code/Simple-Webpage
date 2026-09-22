@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oklahoma Christian University — Admissions</title>
+<style>
+  :root{
+    --maroon:#660000;
+    --maroon-deep:#4A0000;
+    --gray:#CCCCCC;
+    --tan:#E2D79B;
+    --bg:#F7F6F4;
+    --text:#222222;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family: "Source Sans Pro", "Segoe UI", system-ui, sans-serif;
+    line-height:1.5;
+  }
+  h1,h2,h3{
+    font-family: "Source Serif Pro", Georgia, "Times New Roman", serif;
+    font-weight:600;
+    margin:0 0 16px;
+    color:var(--maroon-deep);
+  }
+  a{color:var(--maroon);}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 24px;}
+
+  nav{
+    background:var(--maroon);
+    padding:16px 0;
+  }
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;}
+  nav .brand{color:#fff;font-family:"Source Serif Pro",Georgia,serif;font-size:20px;font-weight:700;}
+  nav ul{list-style:none;display:flex;gap:24px;margin:0;padding:0;}
+  nav a{color:#f0e6e6;text-decoration:none;font-size:15px;}
+  nav a:hover, nav a.active{color:#fff;border-bottom:2px solid var(--tan);}
+
+  header.hero{
+    padding:64px 0 56px;
+    border-bottom:1px solid var(--gray);
+  }
+  header.hero h1{font-size:40px;max-width:640px;}
+  header.hero p{font-size:18px;max-width:560px;color:#444;}
+  .btn{
+    display:inline-block;
+    padding:12px 24px;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:15px;
+    margin-top:8px;
+  }
+  .btn-primary{background:var(--maroon);color:#fff;}
+  .btn-primary:hover{background:var(--maroon-deep);}
+  .btn-secondary{background:#fff;color:var(--maroon);border:1px solid var(--maroon);margin-left:12px;}
+  .btn-secondary:hover{background:var(--tan);border-color:var(--tan);color:var(--maroon-deep);}
+
+  section{padding:48px 0;}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .card{
+    background:#fff;
+    border:1px solid var(--gray);
+    border-radius:8px;
+    padding:24px;
+  }
+  .card h3{font-size:20px;margin-bottom:8px;}
+  .card p{margin:0;color:#444;font-size:15px;}
+
+  .callout{
+    border-left:4px solid var(--tan);
+    background:#FBF8EF;
+    padding:16px 20px;
+    border-radius:4px;
+    margin-top:32px;
+  }
+
+  footer{background:var(--maroon-deep);color:#e8d9d9;padding:32px 0;margin-top:48px;font-size:14px;}
+  footer a{color:#f0e6e6;}
+
+  a:focus,button:focus{outline:2px solid var(--tan);outline-offset:2px;}
+
+  @media (max-width:800px){
+    .grid{grid-template-columns:1fr;}
+    nav ul{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">Oklahoma Christian University</div>
+    <ul>
+      <li><a href="#" class="active">Admissions</a></li>
+      <li><a href="#">Academics</a></li>
+      <li><a href="#">Campus Life</a></li>
+      <li><a href="#">Give</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>A place to grow in faith, mind, and purpose.</h1>
+    <p>Small classes, a Christ-centered community, and a campus in Edmond, Oklahoma where
+       your questions are welcome. Visit and see what makes OC different.</p>
+    <a href="#" class="btn btn-primary">Schedule a Visit</a>
+    <a href="#" class="btn btn-secondary">Request Info</a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Why students choose OC</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Small Classes</h3>
+        <p>A 13:1 student-to-faculty ratio means professors know your name — and your goals.</p>
+      </div>
+      <div class="card">
+        <h3>Faith-Integrated Learning</h3>
+        <p>Every discipline is taught alongside honest conversation about faith and calling.</p>
+      </div>
+      <div class="card">
+        <h3>Real-World Ready</h3>
+        <p>Internships, mission trips, and research start early — not just senior year.</p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>Fall visit days are open.</strong> Reserve a spot to sit in on a class, tour
+      the dorms, and meet current students.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Oklahoma Christian University · 2501 E Memorial Rd, Edmond, OK 73013 ·
+    <a href="#">oc.edu</a>
+  </div>
+</footer>
+
+</body>
+</html>
